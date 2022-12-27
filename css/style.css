@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&display=swap');
+
+body{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 500;
+}
+
+.tabela-periodica{
+    position:relative;
+    margin: 10px;
+}
+
+.popup-container{
+    font-size: 10px;
+    line-height: 10px;
+    position: absolute;
+    max-width: 280px;
+    height: 85px;
+    top: 0;
+    left: 55px;
+}
+
+.popup-container .popup-cabecalho{
+    background-color: #ddd;
+    font-size: 15px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.popup-container .popup-elemento-detalhes{
+    background-color: #eee;
+    border: 1px solid #ddd;
+    padding: 5px 1px 8px;
+}
+
+.elemento:last-child{
+    margin-right: 0;
+}
+
+.linha-elementos{
+    display: flex;
+    position: relative;
+    font-size: 8px;
+    text-align: left;
+}
+
+.linha-elementos-vazio{
+    height: 10px;
+}
+
+.elemento, .elemento-vazio{
+    width: 25px;
+    height: 25px;
+    padding-left: 2px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+.elemento-nome{
+    text-align: center;
+    font-size: 12px;
+    line-height: 9px;
+    font-weight: 600;
+}
+
+.elemento{
+    cursor: pointer;
+    box-shadow: inset 0 0 0 1px rgb(0 0 0 / 10%);
+    border-radius: 2px;
+}
+
+.elemento:hover{
+    transition: 0.2s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.seta-lantanideos::before{
+    content: '';
+    background: url(/images/seta-lantanideos.svg) no-repeat;
+    width: 20px;
+    height: 70px;
+    position: absolute;
+    top: 10px;
+    left: 73px;
+}
+
+.seta-actinidios::before{
+    content:'';
+    background: url(/images/seta-actinideos.svg) no-repeat;
+    width: 30px;
+    height: 55px;
+    position: absolute;
+    top: 22px;
+    left: 69px
+
+}
+
+.grupo-1{
+    background-color: var(--metais-alcalinos)
+}
+
+.grupo-2{
+    background-color: var(--metais-alcalinos-terrosos);
+}
+
+.grupo-3{
+    background-color: var(--metais-de-transicao);
+}
+
+.grupo-4{
+    background-color: var(--lantanideos);
+}
+
+.grupo-5{
+    background-color: var(--actinidios);    
+}
+
+.grupo-6{
+    background-color: var(--outros-metais);
+}
+
+.grupo-7{
+    background-color: var(--nao-metais);
+}
+
+.grupo-8{
+    background-color: var(--halogenios);
+}
+
+.grupo-9{
+    background-color: var(--gases-nobres);
+}
+
+.grupo-10{
+    background-color: var(--semimetais);
+}

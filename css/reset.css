@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --nao-metais: #a1d344;
+    --metais-alcalinos: #f1b200;
+    --metais-alcalinos-terrosos: #eada00;
+    --metais-de-transicao: #eb8e8e;
+    --outros-metais: #a2c7d3;
+    --semimetais: #4db6ac;
+    --halogenios: #70cbeb;
+    --gases-nobres: #3d9ee3;
+    --lantanideos: #90e3e9;
+    --actinidios: #dcadd6;
+}
