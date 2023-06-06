@@ -29,6 +29,7 @@
       }
     }
 
+  })();
     
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -40,4 +41,14 @@
         document.documentElement.style.setProperty('--vh', `${vh}px`);
     });
   
-  })();
+    if ('ontouchstart' in window || navigator.maxTouchPoints) {
+  
+      var elemento = document.getElementById('linha-1');
+      elemento.addEventListener('touchstart', function(event) {
+      
+        console.log('Toque detectado!');
+      });
+    } else {
+    
+      console.log('Este dispositivo não suporta eventos de toque.');
+    }
